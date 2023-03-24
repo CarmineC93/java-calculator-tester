@@ -16,11 +16,11 @@ public class Calculator {
             // funzionamento di ogni metodo presente nella classe Calculator.
 
         //METHODS
-        public float add(float num1, float num2){
+        public static float add(float num1, float num2){
             return num1+num2;
         }
 
-        public float subtract(float num1, float num2){
+        public static float subtract(float num1, float num2){
             if(num1 >= num2){
                 return num1 - num2;
             }else{
@@ -28,15 +28,15 @@ public class Calculator {
             }
         }
 
-        public float divide(float num1, float num2){
+        public static float divide(float num1, float num2){
             if(num2 == 0){
-                throw new IllegalArgumentException("impossible divide per 0");
+                throw new IllegalArgumentException("impossible to divide by 0");
             }else{
                 return num1/num2;
             }
         }
 
-        public float multiply(float num1, float num2){
+        public static float multiply(float num1, float num2){
             return num1*num2;
         }
 
