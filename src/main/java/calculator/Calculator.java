@@ -5,6 +5,9 @@ public class Calculator {
         private float num1;
         private float num2;
 
+    //CONSTRUCTOR
+    private Calculator() {
+    }
 
     //Scopo di questa esercitazione è di implementare i metodi di una semplice calcolatrice e di
             // scrivere una classe di test per verificare che funzionino come ci aspettiamo! Creare una classe chiamata Calculator avente i seguenti metodi pubblici :
@@ -28,11 +31,11 @@ public class Calculator {
             }
         }
 
-        public static float divide(float num1, float num2){
+        public static float divide(float num1, float num2) throws ArithmeticException{
             if(num2 == 0){
-                throw new IllegalArgumentException("impossible to divide by 0");
+                throw new ArithmeticException("impossible to divide by 0");
             }else{
-                return num1/num2;
+                return num1 / num2;
             }
         }
 
